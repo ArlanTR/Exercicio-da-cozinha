@@ -8,9 +8,9 @@ class Funcionario{
     this.atividade = atividade;
   }
   public String getNome(){
-    return (this.nome);
+    return (nome);
   }
   public String getAtividade(){
-    return (this.atividade);
+    return (atividade);
   }
 }

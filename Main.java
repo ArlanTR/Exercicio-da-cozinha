@@ -7,83 +7,85 @@ class Main {
     //criando cozinha Mineira
     Cozinha cozMin = new Cozinha("Mineira", 14, 20, "Feijoada");
     //Definindo ingredientes cozinha mineira
-    var ingrediente = new Ingrediente();
-    ingrediente.nome = "Feijão";
-    ingrediente.dataValidade = LocalDate.of(2023, 8, 4);
-    cozMin.ingredientes.add(ingrediente);
-    ingrediente.nome = "Farinha";
-    ingrediente.dataValidade = LocalDate.of(2023, 8, 4);
-    cozMin.ingredientes.add(ingrediente);
-    ingrediente.nome = "Arroz";
-    ingrediente.dataValidade = LocalDate.of(2023, 8, 4);
-    cozMin.ingredientes.add(ingrediente);
-    ingrediente.nome = "Carne de Porco";
-    ingrediente.dataValidade = LocalDate.of(2023, 8, 4);
-    cozMin.ingredientes.add(ingrediente);
-    ingrediente.nome = "Linguiça";
-    ingrediente.dataValidade = LocalDate.of(2023, 8, 4);
-    cozMin.ingredientes.add(ingrediente);
+    String nomeIngrediente;
+    LocalDate dataValidade;
+    nomeIngrediente = "Feijão";
+    dataValidade = LocalDate.of(2023, 8, 4);
+    cozMin.setIngrediente(0,nomeIngrediente,dataValidade);
+    nomeIngrediente = "Farinha";
+    dataValidade = LocalDate.of(2023, 8, 4);
+    cozMin.setIngrediente(1,nomeIngrediente,dataValidade);
+    nomeIngrediente = "Arroz";
+    dataValidade = LocalDate.of(2023, 8, 4);
+    cozMin.setIngrediente(2,nomeIngrediente,dataValidade);
+    nomeIngrediente = "Carne de Porco";
+    dataValidade = LocalDate.of(2023, 8, 4);
+    cozMin.setIngrediente(3,nomeIngrediente,dataValidade);
+    nomeIngrediente = "Linguiça";
+    dataValidade = LocalDate.of(2023, 8, 4);
+    cozMin.setIngrediente(4,nomeIngrediente,dataValidade);
     //Definindo funcionarios
-    var funcionario = new Funcionario();
-    funcionario.setNome("Carlos");
-    funcionario.setAtividade("Cozinheiro chefe");
-    cozMin.setFuncionarios(0, funcionario);
-    funcionario.setNome ("André");
-    funcionario.setAtividade("Ajudante de cozinha");
-    cozMin.setFuncionarios(1,funcionario);
-    funcionario.setNome ("Antonio");
-    funcionario.setAtividade("Faxineiro");
-    cozMin.setFuncionarios(2,funcionario);
-    funcionario.setNome ("Ana");
-    funcionario.setAtividade ("Caixa");
-    cozMin.setFuncionarios(3,funcionario);
+    String nome;
+    String atividade;
+    nome = "Carlos";
+    atividade = "Cozinheiro chefe";
+    cozMin.setFuncionario(0,nome,atividade);
+    nome = "André";
+    atividade = "Ajudante de cozinha";
+    cozMin.setFuncionario(1, nome, atividade);
+    nome = "Antonio";
+    atividade = "Faxineiro";
+    cozMin.setFuncionario(2, nome, atividade);
+    nome = ("Ana");
+    atividade = ("Caixa");
+    cozMin.setFuncionario(3, nome, atividade);
 
 
     //criando cozinha Chinesa
     Cozinha cozChin = new Cozinha("Chinesa",10,21,"Yakissoba");
     //Definindo ingredientes cozinha Chinesa
-    ingrediente.nome = "Champignon";
-    ingrediente.dataValidade = LocalDate.of(2023, 8, 4);
-    cozChin.ingredientes.add(ingrediente);
-    ingrediente.nome = "Brócolis";
-    ingrediente.dataValidade = LocalDate.of(2023, 8, 4);
-    cozChin.ingredientes.add(ingrediente);
-    ingrediente.nome = "Macarrão";
-    ingrediente.dataValidade = LocalDate.of(2023, 8, 4);
-    cozChin.ingredientes.add(ingrediente);
-    ingrediente.nome = "Carne";
-    ingrediente.dataValidade = LocalDate.of(2023, 8, 4);
-    cozChin.ingredientes.add(ingrediente);
+    nomeIngrediente = "Champignon";
+    dataValidade = LocalDate.of(2023, 8, 4);
+    cozChin.setIngrediente(0, nomeIngrediente,dataValidade);
+    nomeIngrediente = "Brócolis";
+    dataValidade = LocalDate.of(2023, 8, 4);
+    cozChin.setIngrediente(1, nomeIngrediente,dataValidade);
+    nomeIngrediente = "Macarrão";
+    dataValidade = LocalDate.of(2023, 8, 4);
+    cozChin.setIngrediente(2, nomeIngrediente,dataValidade);
+    nomeIngrediente = "Carne";
+    dataValidade = LocalDate.of(2023, 8, 4);
+    cozChin.setIngrediente(3, nomeIngrediente,dataValidade);
     //Definindo funcionarios
-    funcionario.setNome("Xan xing");
-    funcionario.setAtividade("Cozinheiro chefe");
-    cozChin.setFuncionarios(0,funcionario);
-    funcionario.setNome("Funji fei");
-    funcionario.setAtividade("Ajudante de cozinha");
-    cozChin.setFuncionarios(1,funcionario);
-    funcionario.setNome("Mei");
-    funcionario.setAtividade("Caixa");
-    cozChin.setFuncionarios(2,funcionario);
+    nome = "Xan xing";
+    atividade = "Cozinheiro chefe";
+    cozChin.setFuncionario(0,nome,atividade);
+    nome = "Funji fei";
+    atividade = "Ajudante de cozinha";
+    cozChin.setFuncionario(1,nome,atividade);
+    nome = "Mei";
+    atividade = "Caixa";
+    cozChin.setFuncionario(2,nome,atividade);
 
     //criando cozinha italiana
     Cozinha cozIta = new Cozinha("Italiana",13,22,"Espaguete");
     //Definindo ingredientes cozinha italiana
-    ingrediente.nome = "Molho";
-    ingrediente.dataValidade = LocalDate.of(2023, 8, 4);
-    cozIta.ingredientes.add(ingrediente);
-    ingrediente.nome = "Macarão";
-    ingrediente.dataValidade = LocalDate.of(2023, 8, 4);
-    cozIta.ingredientes.add(ingrediente);
-    ingrediente.nome = "Carne";
-    ingrediente.dataValidade = LocalDate.of(2023, 8, 4);
-    cozIta.ingredientes.add(ingrediente);
+    nomeIngrediente = "Molho";
+    dataValidade = LocalDate.of(2023, 8, 4);
+    cozIta.setIngrediente(0,nomeIngrediente,dataValidade);
+    nomeIngrediente = "Macarão";
+    dataValidade = LocalDate.of(2023, 8, 4);
+    cozIta.setIngrediente(1,nomeIngrediente,dataValidade);
+    nomeIngrediente = "Carne";
+    dataValidade = LocalDate.of(2023, 8, 4);
+    cozIta.setIngrediente(2,nomeIngrediente,dataValidade);
     //Definindo funcionarios
-    funcionario.setNome ("Don Sapore");
-    funcionario.setAtividade("Cozinheiro chefe");
-    cozIta.setFuncionarios(0,funcionario);
-    funcionario.setNome ("Bambino");
-    funcionario.setAtividade ("Ajudante");
-    cozIta.setFuncionarios(1,funcionario);
+    nome = "Don Sapore";
+    atividade = "Cozinheiro chefe";
+    cozIta.setFuncionario(0,nome,atividade);
+    nome = "Bambino";
+    atividade = "Ajudante";
+    cozIta.setFuncionario(1,nome,atividade);
 
     //Exibir dados das Cozinha cadastratas
     System.out.print("Cozinha ");
@@ -95,7 +97,13 @@ class Main {
     System.out.println(" hrs ");
     System.out.print("E o prato principal é ");
     System.out.println(cozMin.getPratoPrincipal()+ "\n");
-
+    // exibir ingrediente do prato principal
+    System.out.println("Ingredientes do prato principal:");
+    for(int i = 0; i < cozMin.getIngredientes().size();i++){
+      System.out.println(cozMin.getIngrediente(i).getNome()+" validade "+
+              cozMin.getIngrediente(i).getDataValidade());
+    }
+    System.out.print("\n");
     System.out.print("Cozinha ");
     System.out.println(cozChin.getTipo());
     System.out.print("Horario de Funcionamento é das ");
@@ -105,7 +113,12 @@ class Main {
     System.out.println(" hrs ");
     System.out.print("E o prato principal é ");
     System.out.println(cozChin.getPratoPrincipal() + "\n");
-
+    System.out.println("Ingredientes do prato principal:");
+    for(int i = 0; i < cozChin.getIngredientes().size();i++){
+      System.out.println(cozChin.getIngrediente(i).getNome()+" validade "+
+              cozChin.getIngrediente(i).getDataValidade());
+    }
+    System.out.print("\n");
     System.out.print("Cozinha ");
     System.out.println(cozIta.getTipo());
     System.out.print("Horario de Funcionamento é das ");
@@ -115,11 +128,31 @@ class Main {
     System.out.println(" hrs ");
     System.out.print("E o prato principal é ");
     System.out.println(cozIta.getPratoPrincipal()+ "\n");
-    //Primeiro funcionario de cada cozinha
-    //porem não está funcionando corretamente e não sei como corrigir
-    System.out.print(cozMin.getFuncionario(0).getNome()+" Atividade "+ cozMin.getFuncionario(0).getAtividade()+"\n");
-    System.out.print(cozIta.getFuncionario(0).getNome()+" Atividade "+ cozIta.getFuncionario(0).getAtividade()+"\n");
-    System.out.print(cozChin.getFuncionario(0).getNome()+" Atividade "+ cozChin.getFuncionario(0).getAtividade()+"\n");
+    System.out.println("Ingredientes do prato principal:");
+
+    for(int i = 0; i < cozIta.getIngredientes().size();i++){
+      System.out.println(cozIta.getIngrediente(i).getNome()+" validade "+
+              cozIta.getIngrediente(i).getDataValidade());
+    }
+    System.out.print("\n");
+    //Exibir funcionarios
+    System.out.println("Todos Funcionarios da cozinha Mineira:");
+    for(int i = 0; i < cozMin.getFuncionarios().size(); i++){
+      System.out.print(cozMin.getFuncionario(i).getNome()+" Atividade: "+
+              cozMin.getFuncionario(i).getAtividade()+"\n");
+    }
+    System.out.print("\n");
+    System.out.println("Todos Funcionarios da cozinha Chinesa:");
+    for(int i = 0; i < cozChin.getFuncionarios().size(); i++){
+      System.out.print(cozChin.getFuncionario(i).getNome()+" Atividade: "+
+              cozChin.getFuncionario(i).getAtividade()+"\n");
+    }
+    System.out.print("\n");
+    System.out.println("Todos Funcionarios da cozinha Italiana:");
+    for(int i = 0; i < cozIta.getFuncionarios().size(); i++){
+      System.out.print(cozIta.getFuncionario(i).getNome()+" Atividade: "+
+              cozIta.getFuncionario(i).getAtividade()+"\n");
+    }
 
   }
 }
