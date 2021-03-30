@@ -138,19 +138,19 @@ class Main {
     //Exibir funcionarios
     System.out.println("Todos Funcionarios da cozinha Mineira:");
     for(int i = 0; i < cozMin.getFuncionarios().size(); i++){
-      System.out.print(cozMin.getFuncionario(i).getNome()+" Atividade: "+
+      System.out.print("Nome: "+cozMin.getFuncionario(i).getNome()+" Atividade: "+
               cozMin.getFuncionario(i).getAtividade()+"\n");
     }
     System.out.print("\n");
     System.out.println("Todos Funcionarios da cozinha Chinesa:");
     for(int i = 0; i < cozChin.getFuncionarios().size(); i++){
-      System.out.print(cozChin.getFuncionario(i).getNome()+" Atividade: "+
+      System.out.print("Nome: "+cozChin.getFuncionario(i).getNome()+" Atividade: "+
               cozChin.getFuncionario(i).getAtividade()+"\n");
     }
     System.out.print("\n");
     System.out.println("Todos Funcionarios da cozinha Italiana:");
     for(int i = 0; i < cozIta.getFuncionarios().size(); i++){
-      System.out.print(cozIta.getFuncionario(i).getNome()+" Atividade: "+
+      System.out.print("Nome: "+cozIta.getFuncionario(i).getNome()+" Atividade: "+
               cozIta.getFuncionario(i).getAtividade()+"\n");
     }
 
