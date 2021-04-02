@@ -17,11 +17,9 @@ class Cozinha{
     ingredientes = new ArrayList<>();
     funcionarios = new ArrayList<>();
   }
-  //retorna funcionario no indice passado
-  public Funcionario getFuncionario(int i) {
-    return funcionarios.get(i);
-  }
-  //defini o funcionario no indice passado
+
+  public Funcionario getFuncionario(int i) { return funcionarios.get(i); }
+
   public void setFuncionario(int i,String nome, String atividade) {
     Funcionario funcionario = new Funcionario();
     funcionario.setNome(nome);
@@ -29,23 +27,16 @@ class Cozinha{
     funcionarios.add(i, funcionario);
   }
 
-  public ArrayList<Funcionario> getFuncionarios() {
-    return funcionarios;
-  }
+  public Ingrediente getIngrediente(int i){ return ingredientes.get(i); }
 
-  public ArrayList<Ingrediente> getIngredientes() {
-    return ingredientes;
-  }
-  public Ingrediente getIngrediente(int i){
-    return ingredientes.get(i);
-  }
   public void setIngrediente(int i, String nome, LocalDate dataValidade) {
     var ingrediente = new Ingrediente();
     ingrediente.setNome(nome);
     ingrediente.setDataValidade(dataValidade);
     ingredientes.add(i,ingrediente);
   }
-
+  public int tamanhoListaFuncionarios(){ return funcionarios.size(); }
+  public int tamanhoListaIngredientes(){ return ingredientes.size(); }
   public String getTipo(){
     return  tipo;
   }
